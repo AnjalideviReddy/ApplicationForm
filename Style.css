@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee, #d4fc79, #96e6a1);
+    background-size: 400% 400%;
+    animation: bgMove 15s ease infinite;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+        fieldset{
+            padding:20px;
+            border:5px dotted palevioletred;
+        }
+        legend{
+            padding: 0 10px;
+          }
+        input{
+            color:black;
+            background-color: bisque;
+         
+        }
+        input:hover{
+            
+             border:1px solid bisque;
+             color:black;
+        }
+        b{
+            color:brown;
+            
+        }
+        button{
+            border:2px solid violet;
+            color:brown;
+            border-radius: 10px;
+ 
+        }
+.greeting-box {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    animation: fadeInBounce 1s ease;
+}
+.typing-container {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+/* Hide default input */
+.file-upload input[type="file"] {
+    display: none;
+}
+
+/* Container for file input */
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Styled "Choose File" button */
+.custom-file-btn {
+    background-color: violet;
+    padding: 8px 15px;
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.custom-file-btn:hover {
+    background-color: darkviolet;
+}
+
+/* Filename text */
+.file-upload span {
+    color: #444;
+    font-size: 0.95rem;
+    font-style: italic;
+}

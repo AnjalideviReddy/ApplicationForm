@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <center>
+        <form>
+            <fieldset>
+                <legend><h1 style="color: green;">Application Form</h1></legend>
+
+                <!-- Name -->
+                <label for="name"><b>Name:</b></label>
+                <input type="text" id="name" name="name" placeholder="E.g., Anjali Devi Reddy" required><br><br>
+
+                <!-- Phone -->
+                <label for="phone"><b>Phone Number:</b></label>
+                <input type="tel" id="phone" name="phone" placeholder="### ### ####" required><br><br>
+
+                <!-- Email -->
+                <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" name="email" placeholder="E.g., anjali@gmail.com" required><br><br>
+
+                <!-- Gender -->
+                <b>Gender:</b><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+                <input type="radio" id="others" name="gender" value="Others">
+                <label for="others">Others</label><br><br>
+
+                <!-- Qualification -->
+                <label for="qualification"><b>Qualification:</b></label>
+                <select id="qualification" name="qualification" required>
+                    <option value="">--Select--</option>
+                    <option value="High School">High School</option>
+                    <option value="Bachelor's">Bachelor's</option>
+                    <option value="Master's">Master's</option>
+                </select><br><br>
+
+                <!-- Skills -->
+                <label><b>Skills:</b></label><br><br>
+                <input type="checkbox" id="java" name="skills" value="Java">
+                <label for="java">JAVA</label>
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="c" name="skills" value="C">
+                <label for="c">C</label><br><br>
+
+                <!-- Experience -->
+                <label for="experience"><b>Experience:</b></label><br><br>
+                <textarea id="experience" name="experience" style="width:400px" rows="5"
+                    placeholder="Tell me your experience below 2000 characters including internships..."></textarea><br><br>
+<label><b>Upload Resume:</b></label>
+<div class="file-upload">
+    <label for="resume" class="custom-file-btn">Choose Resume</label>
+    <span id="resume-name">No file chosen</span>
+    <input type="file" id="resume" name="resume" required>
+</div><br>
+
+<label><b>Upload Photo:</b></label>
+<div class="file-upload">
+    <label for="photo" class="custom-file-btn">Choose Photo</label>
+    <span id="photo-name">No file chosen</span>
+    <input type="file" id="photo" name="photo">
+</div><br>
+
+
+                <!-- Submit -->
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </center>
+
+    <!-- External JS -->
+    <script src="javascript.js"></script>
+</body>
+</html>
