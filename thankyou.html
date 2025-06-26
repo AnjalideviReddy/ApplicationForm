@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You</title>
+    <style>
+        body {
+            background-color: #e0ffe0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+        .emoji {
+            font-size: 60px;
+        }
+        h1 {
+            color: darkgreen;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="emoji">🙏</div>
+    <h1 id="message">Thank you!</h1>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name') || "User";
+        document.getElementById("message").textContent =
+            `Thank you ${name}, your application has been submitted successfully!`;
+    </script>
+</body>
+</html>
