@@ -40,5 +40,7 @@ ApplicationForm/
 1. Clone this repository  
    ```bash
    git clone https://github.com/AnjalideviReddy/ApplicationForm.git
+2. Open the folder in Visual Studio Code
+3. Run the project by opening index.html in your browser
 
 
