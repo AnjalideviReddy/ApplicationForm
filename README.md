@@ -3,7 +3,7 @@
 An interactive and beautifully designed **Application Form** built using **HTML, CSS, and JavaScript**.  
 It features typing animations, colorful backgrounds, and smooth transitions to enhance the user experience.
 
-🌐 **Live Demo:** [Application Form](https://github.com/AnjalideviReddy/ApplicationForm)
+🌐 **Live Demo:** [Application Form](https://anjalidevireddy.github.io/ApplicationForm/)
 
 ---
 
